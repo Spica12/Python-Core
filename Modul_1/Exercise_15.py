@@ -1,0 +1,5 @@
+name = input("Your name? ")
+email = input('Your email? ')
+age = int(input('How old are you? '))
+height = float(input('How tall are you? '))
+is_active = bool(input('Would you like to subcribe? '))
