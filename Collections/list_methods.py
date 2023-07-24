@@ -67,4 +67,10 @@ chars_copy = chars.copy()
 
 print(chars == chars_copy) # True
 
+# Перевіряє чи є необхідне значення у списку -            in
+num = [1, 45, 42, 13, 7, 5]
+
+print(42 in num) # True
+print(10 in num) # False
+
 

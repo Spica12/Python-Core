@@ -19,6 +19,14 @@ first_letter = some_iterable[-3] # 'a'
 second_letter = some_iterable[-2] # 'b'
 third_letter = some_iterable[-1] # 'c'
 
+# Доступ до елементу списка, якщо елемент список
+
+a = [1, 2, [1, 2, 3]]
+
+m = a[2][1]
+
+print('List in list: ', m)
+
 # Можливість змінювати елементи списку
 some_iterable = ['a', 'b', 'c']
 
@@ -54,3 +62,15 @@ numbers_copy = numbers[:]
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 first_three = numbers[0:3] # [0, 1, 2]
+
+#                                               for
+some_iterable = ['a', 'b', 'c']
+
+for i in some_iterable:
+    print(i)
+
+#
+odd_numbers = [1, 3, 5, 7, 9]
+
+for i in odd_numbers:
+    print(i ** 2)
