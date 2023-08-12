@@ -80,3 +80,7 @@ print(name.strip()) # Avril Lavigne
 text = 'fsdf sdfsd dd d dfsdfj asdlqwe csvcxv'
 words = text.split()
 print(words)
+
+
+print(text.capitalize()) # Перша буква велика
+print(text.title()) # Кожна перша буква з великої

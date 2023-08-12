@@ -44,15 +44,23 @@ def is_valid_password(password):
     return is_len and has_upper and has_lower and has_digital
             
 
+def teacher_is_valid_password(password):
+
+    if len(password) < 8:
+        return False
+    
+    if any not in
+
+
 if __name__ == '__main__':
     
-    new_password = get_random_password()
-    print(new_password, is_valid_password(new_password))
+    password = get_random_password()
+    print(password, is_valid_password(password), teacher_is_valid_password(password), sep='t')
 
-    password_1 = 'ghjkSFGk'
-    print(password_1, is_valid_password(password_1))
+    password = 'ghjkSFGk'
+    print(password, is_valid_password(password), teacher_is_valid_password(password), sep='t')
 
     password_1 = 'ghjk8FGk'
-    print(password_1, is_valid_password(password_1))
+    print(password, is_valid_password(password), teacher_is_valid_password(password)), sep='t'
 
 

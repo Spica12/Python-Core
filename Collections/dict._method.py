@@ -112,6 +112,17 @@ for user in persons:
 # Steve
 # 24
 
+# Об'єднання словників
+dict_a = {'alex': 12, 'Olga': 10}
+dict_b = {'boris': 12, 'Kostya': 10}
+dict_c = {'Ira': 12, 'Vova': 10}
+
+dict_united = dict()
+for value in (dict_a, dict_b, dict_c):
+    dict_united.update(value)
+
+print(dict_united)
+
 
 
 

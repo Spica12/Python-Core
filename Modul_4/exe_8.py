@@ -36,6 +36,18 @@ def game(terra, power):
     return power
 
 
+def teacher_game(terra, power):
+
+    for i in range(len(terra)):
+        for j in range(len(terra[i])):
+            if power >= terra[i][j]:
+                power += terra[i][j]
+            else:
+                break
+
+    return power
+
+    
 
 
 energy_list = [[1, 1, 5, 10], [10, 2], [1, 1, 1]]
@@ -44,4 +56,7 @@ power = game(energy_list, 1)
 print(power)
 
 power = game(energy_list, 2)
+print(power)
+
+power = teacher_game(energy_list, 1)
 print(power)

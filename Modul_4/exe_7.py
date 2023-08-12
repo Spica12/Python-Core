@@ -44,7 +44,7 @@ points = {
 }
 
 
-def calculate_distance(coordinates):
+def my_calculate_distance(coordinates):
 
     global points
 
@@ -77,15 +77,37 @@ def calculate_distance(coordinates):
     return distance
 
 
+
+def teacher_calculate_distance(coordinates):
+
+    if len(coordinates) == 0:
+        return 0
+    
+    sum = 0
+
+    for iterator in range(len(coordinates)-1):
+
+        try:
+            sum += points[(coordinates[iterator], coordinates[iterator+1])]
+        except KeyError:
+            sum += points[(coordinates[iterator+1], coordinates[iterator])]
+    
+    return sum
+
+
+
 # 2 + 4.1 + 3.9 + 3.9 + 3.9 + 2.5 = 20.3
 coordinats = [0, 1, 3, 2, 3, 2, 1]
-distance = calculate_distance(coordinats)
-print(distance)
+distance = my_calculate_distance(coordinats)
+teacher_distance = teacher_calculate_distance(coordinats)
+print(distance, teacher_distance)
 
 coordinats = [0]
-distance = calculate_distance(coordinats)
-print(distance)
+distance = my_calculate_distance(coordinats)
+teacher_distance = teacher_calculate_distance(coordinats)
+print(distance, teacher_distance)
 
 coordinats = []
-distance = calculate_distance(coordinats)
-print(distance)
+distance = my_calculate_distance(coordinats)
+teacher_distance = teacher_calculate_distance(coordinats)
+print(distance, teacher_distance)

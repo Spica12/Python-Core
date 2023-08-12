@@ -57,10 +57,22 @@ def get_random_password():
 
     return random_password
 
+
+def teacher_get_random_password():
+
+    string = ''
+
+    for i in range(8):
+        random_num = randint(40, 126)
+        string += str(chr(random_num))
+
+    return string
+
+
 if __name__ == '__main__':
 
-    print('1', get_random_password())
-    print('2', get_random_password())
-    print('3', get_random_password())
-    print('4', get_random_password())
-    print('5', get_random_password())
+    print('1', get_random_password(), teacher_get_random_password(), sep='\t')
+    print('2', get_random_password(), teacher_get_random_password(), sep='\t')
+    print('3', get_random_password(), teacher_get_random_password(), sep='\t')
+    print('4', get_random_password(), teacher_get_random_password(), sep='\t')
+    print('5', get_random_password(), teacher_get_random_password(), sep='\t')
