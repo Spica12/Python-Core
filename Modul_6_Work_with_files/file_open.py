@@ -1,8 +1,8 @@
 # Open file
 # fh = open('test_file.txt')
-#  fh - файловий дескриптор
+#  fh - файловий дескриптор (можна, наприклад file)
 
-# After you have to close file
+# After, you have to close file
 fh = open('test_file.txt')
 fh.close()
 
@@ -12,17 +12,28 @@ fh.close()
 --------------------------------------------------------------------------------------
 |  'r' | Open only reading (default)                                                 |
 |  'w' | Open on writing, вміст файлу видаляється, якщо не існує - створюється новий |
-|  'x' | Open on writing if the file doesn't exist                                   |
+|  'x' | Open on writing if the file doesn't exist, else - excepting                 |
 |  'a' | Open on дозапис, info addint in the end file                                |
 |  'b' | Open in binary mode                                                         |
 |  't' | Open in text mode (default)                                                 |
 |  '+' | Open on reading and writing                                                 |
 --------------------------------------------------------------------------------------
 """
-fh = open('test_file.txt', 'w')
-symbols_written = fh.write('hello!')
-print(symbols_written)
-fh.close()
+# print('-------------------------------- read')
+# # file.read(<symbols>) - read only next symbols 
+# # file.read() - read all text from file
+# fh = open('test_file.txt', 'w')
+# symbols_written = fh.read()
+# print(symbols_written)
+# fh.close()
+
+
+# print('-------------------------------- write')            
+
+# fh = open('test_file.txt', 'w')
+# symbols_written = fh.write('hello!')
+# print(symbols_written)
+# fh.close()
 
 print('-------------------------------- seek, read') #                
 fh = open('test_file.txt', 'w+')
@@ -89,6 +100,13 @@ while True:
         break
     print(line) # ['first line\n', 'Second line\n', 'Third line']
 fh.close()
+
+print('-------------------------------- readlines ')             
+file = open('Modul_6_Work_with_files/test_file_reading_only.txt', 'r')
+
+for line in file:
+    print(line)
+
 
 print('-------------------------------- seek ')
 fh = open('test_file.txt', 'w')
