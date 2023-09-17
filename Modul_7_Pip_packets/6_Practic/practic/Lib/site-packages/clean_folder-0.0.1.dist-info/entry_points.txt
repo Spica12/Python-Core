@@ -1,0 +1,3 @@
+[console_scripts]
+clean-folder = clean_folder.clean:main
+fill-files = clean_folder.files_generator:file_generator

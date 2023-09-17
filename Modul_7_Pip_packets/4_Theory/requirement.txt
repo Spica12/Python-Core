@@ -1,0 +1,5 @@
+build==0.10.0
+colorama==0.4.6
+packaging==23.1
+pygame==2.4.0
+pyproject_hooks==1.0.0

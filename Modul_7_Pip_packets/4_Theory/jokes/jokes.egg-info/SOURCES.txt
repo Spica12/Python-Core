@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+jokes/__init__.py
+jokes/random_jokes.py
+jokes.egg-info/PKG-INFO
+jokes.egg-info/SOURCES.txt
+jokes.egg-info/dependency_links.txt
+jokes.egg-info/not-zip-safe
+jokes.egg-info/requires.txt
+jokes.egg-info/top_level.txt

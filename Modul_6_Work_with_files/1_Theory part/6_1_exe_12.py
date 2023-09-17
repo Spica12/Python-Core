@@ -1,3 +1,4 @@
+from pathlib import Path
 message = "Hello, Привіт, "
 
 print(message.encode())             # b'Hello, \xd0\x9f\xd1\x80\xd0\xb8\xd0\xb2\xd1\x96\xd1\x82, '

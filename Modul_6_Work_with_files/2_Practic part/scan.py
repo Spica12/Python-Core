@@ -18,13 +18,13 @@ registered_extensions = {
     'PNG': png_files,
     'JPG': jpg_files,
     'TXT': txt_files,
-    'DOCX': docx_files
+    'DOCX': docx_files,
     'ZIP': archives
 }
 
 
 def get_extensions(file_name):
-    return Path(file.name).suffix[1:].upper()
+    return Path(file_name).suffix[1:].upper()
 
 
 def scan(folder):
@@ -34,7 +34,7 @@ def scan(folder):
         if item.is_dir():
 
             if item.name not in ('JPEG', 'JPG', 'TXT', 'DOCX', 'OTHER', 'ARCHIVE'):
-                folders.append(item)
+                folder.append(item)
                 scan(item)
             continue
 
