@@ -11,3 +11,16 @@ class SingelTon(object):
 
 class MyClass(SingelTon):
     pass
+
+
+
+
+
+
+
+A = MyClass()
+B = MyClass()
+
+print(A)        # <__main__.MyClass object at 0x00000180F205F090>
+print(B)        # <__main__.MyClass object at 0x00000180F205F090>
+print(A is B)   # True
