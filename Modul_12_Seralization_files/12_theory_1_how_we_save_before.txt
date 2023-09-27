@@ -1,0 +1,6 @@
+tiger
+woolf
+Python
+Bobr
+& C:/Users/user/AppData/Local/Programs/Python/Python311/python.exe "d:/GoIT/Python Core/Modul_12_Seralization_files/1_Theory/12_theory_1_how_we_save_before.py"
+& C:/Users/user/AppData/Local/Programs/Python/Python311/python.exe "d:/GoIT/Python Core/Modul_12_Seralization_files/1_Theory/12_theory_1_how_we_save_before.py"
